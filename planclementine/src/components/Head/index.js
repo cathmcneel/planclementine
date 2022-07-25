@@ -6,6 +6,7 @@ import Landing from '../Landing/index';
 import Signup from '../Signup/index';
 import Home from '../Home/index';
 import Nav from '../Nav/index';
+import Plan from '../Plan/index'
 
 
 function Head() {
@@ -35,14 +36,21 @@ function Head() {
           if (currentPage === 'Contact') {
             return <Contact />;
           }
+          if (currentPage === 'Plan') {
+            return <Plan />;
+          }
           return < Home/>;
     };
     return (
         <header>
+           <div className='title' onMouseOver={menu}>
+            {/* <img src={logo} className="botalogo" alt="bota" onClick={() => setCurrentPage('Home')}/>
+            <img src={dot} className="botadzot" alt="a round round circle" /> */}
+            </div>
             <Nav nav={nav} currentPage={currentPage} handlePageChange={handlePageChange} />
             {renderPage()}
             <p>
-              HOME!
+           
             </p>
     </header>
     );

@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
 import Head from './components/Head/index';
+import Footer from './components/Footer/index'
 
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <>
     <Head></Head>
    
+    <Footer></Footer>
 
    </>
   );

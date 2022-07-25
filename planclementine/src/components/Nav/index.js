@@ -2,51 +2,54 @@ import React, { useEffect } from 'react';
 import { capitalizeFirstLetter } from '../utils/helpers'
 
 function Nav({ currentPage, handlePageChange, nav }) {
-    useEffect(() => {
-      document.title = capitalizeFirstLetter(currentPage)
-    }, [currentPage])
+    // useEffect(() => {
+    //   document.title = capitalizeFirstLetter(currentPage)
+    // }, [currentPage])
   
-    if (!nav) {
-      return null
-    }
+    // if (!nav) {
+    //   return null
+    // }
   
     return (
-        <div className='navAnchor'>
-          <ul className='navFloat'>
+      <nav id="navbar" className="flex items-center justify-between flex-wrap">
+        <div className="flex items-center flex-shrink-0 text-black mr-6">
+          <span id="title" href='#Home' onClick={() => handlePageChange('Home') } className="font-semibold text-xl tracking-tight">Clementine.</span>
+        </div>
+        <div id="list-items">
+          <ul id="nav-items" className='navFloat'>
           <li className="link">
-              <span href='#SignUp' onClick={() => handlePageChange('SignUp') }
-                className={currentPage === 'SignUp' ? 'nav-link active' : 'nav-link'}>
-                  SignUp
+              <span href='#Signup' onClick={() => handlePageChange('Signup') }
+                className= {currentPage === 'Signup' ? 'nav-link active' : 'nav-link'}>
+                  sign up.
                 </span>
             </li>
-          {/* <li className="link">
-              <span href='#Login' onClick={() => handlePageChange('Login') }
-                className={currentPage === 'Login' ? 'nav-link active' : 'nav-link'}>
-                  Login
+          <li className="link">
+              <span href='#Plan' onClick={() => handlePageChange('Plan') }
+                className={currentPage === 'Plan' ? 'nav-link active' : 'nav-link'}>
+                  plan.
                 </span>
-            </li> */}
+            </li>
             <li className="link">
               <span href='#About' onClick={() => handlePageChange('About')}
                 className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}>
-                  About
+                  about.
                 </span>
             </li>
-            {/* <li className="link">
-              <span href='#Product' onClick={() => handlePageChange('Product')}
-                className={currentPage === 'Product' ? 'nav-link active' : 'nav-link'}>
-                  Products
+            <li className="link">
+              <span href='#Inspiration' onClick={() => handlePageChange('Inspiration')}
+                className={currentPage === 'Inspiration' ? 'nav-link active' : 'nav-link'}>
+                  get inspired.
                 </span>
-            </li> */}
+            </li>
             <li className="link">
               <span href='#Contact' onClick={() => handlePageChange('Contact')}
                 className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}>
-                  Contact
+                  contact.
                 </span>
             </li>
           </ul>
-    
-  
-        </div>
+          </div>
+        </nav>
     );
   }
   
