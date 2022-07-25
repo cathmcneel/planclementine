@@ -8,6 +8,8 @@
   --blue: #a2abce;
   --coral: #ff4a38;
   --green: #818c57;
+  --cream: #ffe0ae;
+  --offwhite: #FAF9F6;
 }
 
 * {
@@ -29,6 +31,8 @@
   font-weight: bold;
   font-size: xx-large;
   padding: 8px;
+  background-color: var(--offwhite);
+  width: 100%;
 }
 .header-main {
   border: 3px solid pink;
@@ -48,13 +52,34 @@
 }
 #nav-items {
   background-color: var(--orange);
-  color: white;
+  color: var(--offwhite);
   font-size: large;
   font-weight: medium;
 }
 .link {
   margin: 15px;
   padding: 40px;
+}
+/* Team Cards Styling  */
+.team-cards-main{
+  background-color: var(--blue);
+  display: inline-block;
+  border: 3px solid pink;
+  width: 100%;
+}
+.team-cards {
+  background-color: var(--blue);
+  padding: 10px;
+
+}
+.meet-team {
+  text-align: center;
+  font-weight: bold;
+  font-size: xx-large;
+  color: var(--offwhite)
+}
+#individual-member {
+  padding: 10px;
 }
 
 /* Footer Styling  */
