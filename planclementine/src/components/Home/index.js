@@ -36,6 +36,7 @@ function Home () {
 
     return (
         <>
+
             <div className="team-cards">
                 <h1 className="meet-team"> meet our team. </h1>
                 <div className="team-cards">
@@ -44,10 +45,11 @@ function Home () {
                             name={team.name}
                             title={team.title}
                             description={team.description}
-                            img={team.image}
+                            image={team.image}
                         />
                     ))}
                 </div>
+                
             </div>
         </>
     )
