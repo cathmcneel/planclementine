@@ -1,0 +1,134 @@
+* {
+  --front: rgb(255, 153, 51);
+  --strong: rgb(148, 67, 13);
+  --mellow: rgb(200, 172, 134);
+  --back: rgb(241, 244, 227);
+}
+
+.bota-dark {
+  --front: rgb(241, 244, 227);
+  --strong: rgb(148, 67, 13);
+  --mellow: rgb(133, 112, 84);
+  --back: rgb(37, 38, 34);
+}
+
+.bota-strong {
+  --front: rgb(37, 38, 34);
+  --strong: rgb(200, 172, 134);
+  --mellow: rgb(241, 244, 227);
+  --back: rgb(148, 67, 13);
+}
+
+/* general rules, setting theme */
+* {
+  font-family: 'Josefin Sans', sans-serif;
+  /* font-weight: 300; */
+  /* font-size: medium; */
+  background-color: var(--back);
+  color: var(--front);
+  text-decoration: none;
+  list-style-type: none;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: x-large;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: large;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: medium;
+}
+
+h4 {
+  font-weight: 300;
+  font-size: medium;
+}
+
+h5 {
+  font-weight: 300;
+  font-size: small;
+}
+
+
+/* styling by section */
+.clemlogo {
+  width: 50%;
+  height: auto;
+  background-color: transparent;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 20px;
+}
+
+.clemdot {
+  width: 20%;
+  margin-right: 10%;
+  margin-top: 20px;
+}
+
+.navAnchor {
+  border: 2px solid black;
+ 
+  /* position:relative;
+  background-color: transparent; */
+}
+
+.navFloat {
+  border: 2px solid pink;
+  
+  /* z-index: 1000;
+  position:absolute;
+  background-color: transparent;
+  opacity: .8; */
+}
+
+.navmenu {
+  border: 2px solid green;
+  /* position: fixed;  
+  right: 5%;
+   z-index: 11;
+  text-align: right;
+  margin-top: 88px;
+  margin-right: 5%;
+  margin-left: 5%;
+  background-color: transparent; */
+}
+
+.link {
+  border: 2px solid blueviolet;
+ 
+  /* color: var(--strong);
+  font-weight: 500;
+  font-size: 400%;
+  margin: 1px;
+  padding: 25px;
+  background-color: inherit; */
+}
+
+.nav-link {
+  background-color: transparent;
+  color: var(--strong);
+}
+
+.header-clemdot {
+width: 5%;
+margin-right: 5%;
+margin-top: 20px;
+}
+
+/* Footer Styling  */
+.Footer-container {
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+}
+
+.Footer-main {
+margin-top: auto;
+}
